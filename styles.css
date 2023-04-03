@@ -1,0 +1,32 @@
+h1 {
+  background: #f0c040;
+}
+
+.total {
+  padding: 5px;
+  border: 0.5px solid bisque;
+  border-radius: 5px;
+  background-color: #f0c040;
+}
+
+.card-body {
+  background-color: beige;
+}
+.cart {
+  border: 5px solid beige;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: beige;
+  height: fit-content;
+}
+.products {
+  border: 5px solid beige;
+  border-radius: 5px;
+  background-color: beige;
+  margin: 5px;
+  padding: 5px;
+}
+.title {
+  margin-left: 20px;
+}
