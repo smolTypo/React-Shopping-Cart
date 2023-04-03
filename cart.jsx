@@ -109,8 +109,22 @@ const Products = (props) => {
   const addToCart = (e) => {
     let name = e.target.name;
     let item = items.filter((item) => item.name == name && item.instock > 0);
-    if (item === null) return;
-    item[0].instock = item[0].instock - 1;
+
+    // ===== checking for zero quantity??? ===== //
+    if (item[0].instock === 0)
+      return alert("None available, time to re-stock!");
+
+    const updatedStock = items.map((item) => {
+      if (item.name === name) {
+        item.instock--;
+      }
+      return item;
+    });
+
+    setItems(updatedStock);
+
+    // if (item === null) return;
+    // item[0].instock = item[0].instock - 1;
     console.log(`add to Cart ${JSON.stringify(item)}`);
     setCart([...cart, ...item]);
   };
@@ -125,6 +139,7 @@ const Products = (props) => {
     }
     setCart(newCart); // set cart to new array
   };
+
 
   const photos = [
     "./images/BagelRat.jpg",
