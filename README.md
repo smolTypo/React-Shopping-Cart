@@ -2,7 +2,7 @@
 
 This is an exercise as part of Module 19 of MIT xPro Full Stack Bootcamp
 
-Our assignment for this exercise is to implement a restocking feature for a React shopping cart application.
+Our assignment for this exercise is to implement a restocking feature for a React shopping cart application. This feature will allow users to easily view available items in the shopping cart and restock them when needed.
 
 Demo: https://smoltypo.github.io/React-Shopping-Cart/
 
@@ -15,6 +15,11 @@ Here’s how the reset stock feature works:
 - There’s an input field on the page that contains the URL to the Strapi back end
 - When a user clicks the “Re-Stock Products” button, a call is made to the Strapi back end specified in the input field
 - The result of this call is an updated list of products
+
+## Future Roadmap
+
+1. Add functionality to allow users to specify the quantity of products they would like to restock.
+2. Add functionality to allow users to select specific products to restock.
 
 
 ## Screenshot:
