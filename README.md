@@ -4,7 +4,7 @@ This is an exercise as part of Module 19 of MIT xPro Full Stack Bootcamp
 
 Our assignment for this exercise is to implement a restocking feature for a React shopping cart application.
 
-Demo:
+Demo: https://smoltypo.github.io/React-Shopping-Cart/
 
 ## About:
 
