@@ -218,7 +218,7 @@ const Products = (props) => {
   // ===== To do: Re-Stock Products by making API call to url ===== //
   const restockProducts = (url) => {
     doFetch(url);
-    let newItems = items.map((item) => {
+    let newItems = data.map((item) => {
       let { name, country, cost, instock } = item;
       return { name, country, cost, instock };
     });
